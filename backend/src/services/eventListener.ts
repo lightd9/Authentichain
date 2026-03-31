@@ -1,8 +1,8 @@
 import pool from "../db";
 import { getContract, getProvider } from "./blockchainService";
 
-// Sync any missed events since this block (your contract deployment block)
-const DEPLOYMENT_BLOCK = 10420639; // replace with your actual deployment block number
+// Sync any missed events since this block 
+const DEPLOYMENT_BLOCK = 10420639; 
 
 export const syncPastEvents = async (): Promise<void> => {
   const contract = getContract();
